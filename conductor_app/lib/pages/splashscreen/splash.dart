@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:animated_text_kit/animated_text_kit.dart';
+
 import 'package:conductor_app/pages/mainScreen/mainscr.dart';
 import 'package:flutter/material.dart';
 
@@ -41,27 +41,7 @@ class _SplashState extends State<Splash> {
             // Image.asset("path");// isse uncomment kr lena , pubspec.yaml mai jaa k assets import kr li then
             //assets ek assets wale folder mai rakh di
             // baad ai boluga yaha logo lga do tab lga dena
-            Center(
-              child: AnimatedTextKit(
-                totalRepeatCount: 40,
-                animatedTexts: [
-                  FadeAnimatedText(
-                    'First Fade',
-                    textStyle: const TextStyle(
-                        backgroundColor: Colors.green,
-                        color: Colors.white,
-                        fontSize: 32.0,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  ScaleAnimatedText(
-                    'Then Get Bigger',
-                    duration: Duration(milliseconds: 4000),
-                    textStyle:
-                        const TextStyle(color: Colors.indigo, fontSize: 50.0),
-                  ),
-                ],
-              ),
-            ),
+
             Text(
               "HIMYATRI",
               style: TextStyle(
