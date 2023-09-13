@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:conductor_app/pages/mainScreen/mainscr.dart';
+import 'package:conductor_app/pages/signUpScreen/signup.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
@@ -17,7 +18,8 @@ class _SplashState extends State<Splash> {
       // raat k 3 baj rhe hai and mueh  nahi pta ki mai ki mai kya code kr rha
       // argar koi yeh code padh rha , pleases mujhe ek cup coffee pila do
       Navigator.push(
-          context, MaterialPageRoute(builder: (c) => const MainScreen()));
+          context, MaterialPageRoute(builder: (c) => const SignUpScreen()));
+      // i changed route to SignUpScreen from th MainScreen for better styling the Page , CGaneg ti back after its done
     });
   }
 
