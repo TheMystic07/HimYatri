@@ -13,7 +13,7 @@ void main() async {
 }
 
 class MyApp extends StatefulWidget {
-  final Widget? child; // wtf  if null safety
+  final Widget? child; // wtf  is null safety
   // bhenco pta nahi par yeh ! aur ? uske liye hi hai , ki jo input aa  rha voh null na hoo
   //achha hai par mere 2 ghanthe  mujeh vapis dedo
   const MyApp({super.key, this.child});
