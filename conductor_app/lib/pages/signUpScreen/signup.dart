@@ -1,5 +1,6 @@
-import 'dart:html';
+// import 'dart:html';
 
+import 'package:conductor_app/pages/signUpScreen/register_bus.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -37,7 +38,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
             const Center(
               child: Text(
-                "Register Bus",
+                "Register Driver",
                 style: TextStyle(
                     fontSize: 28,
                     color: Colors.grey,
@@ -103,12 +104,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white60)),
                 hintStyle: TextStyle(color: Colors.grey, fontSize: 12),
-                labelStyle: TextStyle(color: Colors.amberAccent, fontSize: 22),
+                labelStyle: TextStyle(
+                    color: Color.fromARGB(255, 209, 45, 122), fontSize: 22),
               ),
             ),
             const SizedBox(height: 22),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const RegisterBus()));
+                },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.amberAccent),
                 child: const Text(
